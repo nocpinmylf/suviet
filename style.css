@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'ThuPhap';
+  src: url(res/font/tp.eot);
+  src: url(res/font/tp.eot?#iefix) format('embedded-opentype'),
+      url(res/font/tp.ttf) format('truetype'),
+      url(res/font/tp.woff) format('woff'),
+      url(res/font/tp.woff2) format('woff2'),
+      url(res/font/tp.svg) format('svg');
+}
+
+html {
+  --main-color: #c2665d;
+}
+
+body {
+  font: 15px/1.5  Cambria, Arial;
+  color: #141414;
+  background-color: antiquewhite;
+}
+
+ul, p {margin: 0;}
+
+#header,
+#main,
+#footer {
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/*------------------------
+HEADER
+--------------------------*/
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  padding: 0 2rem;
+}
+
+.logo a {
+  display: flex;
+  font-family: 'ThuPhap';
+  text-transform: uppercase;
+  color: #141414;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.header-nav-list a:hover {
+  background-color: antiquewhite;
+}
+
+.logo img {
+  width: 35px;
+  height: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.search-form {
+  margin-right: 2rem;
+}
+
+.search-form input {
+  border: 0;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.search-form input:focus {
+  outline: 0;
+  width: 150px;
+  transition: .1s linear;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.header-nav-list a {
+  padding: 10px 15px;
+  color: #141414;
+}
+
+.sub-list {
+  display: none;
+}
+
+
+/*------------------------
+MAIN
+--------------------------*/
+#main {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1200px;
+}
+
+/*------------------------
+FOOTER
+--------------------------*/
+
+/*------------------------
+RESPONSIVE
+--------------------------*/
+@media (max-width: 1000px) {
+  #header {
+    padding: 0 1rem;
+  }
+}
