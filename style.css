@@ -9,12 +9,15 @@
 }
 
 html {
-  --main-color: #c2665d;
+  scroll-behavior: smooth;
+  --main-color: #141414;
+  --main-color-blur: #141414c0;
+  --second-color: #a19528;
 }
 
 body {
   font: 15px/1.5  Cambria, Arial;
-  color: #141414;
+  color: var(--main-color);
   background-color: antiquewhite;
 }
 
@@ -29,27 +32,36 @@ ul, p {margin: 0;}
 a:hover {
   text-decoration: none;
 }
+
 /*------------------------
 HEADER
 --------------------------*/
 #header {
   display: flex;
+  flex-direction: column;
+}
+
+#header .nav {
+  display: flex;
   justify-content: space-between;
-  background-color: var(--main-color);
-  padding: 0 2rem;
+  background-color: var(--main-color-blur);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  margin-left: 25px;
 }
 
 .logo a {
   display: flex;
   font-family: 'ThuPhap';
   text-transform: uppercase;
-  color: #141414;
+  color: antiquewhite;
   font-size: 30px;
   padding: 10px;
-}
-
-.header-nav-list a:hover {
-  background-color: antiquewhite;
 }
 
 .logo img {
@@ -67,16 +79,14 @@ HEADER
 }
 
 .search-form input {
+  display: block;
   border: 0;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 10px;
-  width: 100px;
 }
 
 .search-form input:focus {
   outline: 0;
-  width: 150px;
-  transition: .1s linear;
 }
 
 .header-nav-list {
@@ -87,21 +97,212 @@ HEADER
 
 .header-nav-list a {
   padding: 10px 15px;
-  color: #141414;
+  color: antiquewhite;
 }
 
-.sub-list {
+.header-nav-list a:hover {
+  background-color: var(--second-color);
+}
+
+
+.parent {
+  display: grid;
+  grid-template-columns: 309fr 500fr;
+  grid-template-rows: 290px 290px;
+  gap: 5px;
+
+}
+  
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background: url(res/img/banner1.jpg) no-repeat center;
+  background-size: cover;
+}
+.div2 { 
+  grid-area: 1 / 2 / 2 / 3;
+  background: url(res/img/banner2.jpg) no-repeat center;
+  background-size: cover;
+}
+.div3 {
+  grid-area: 2 / 1 / 3 / 3;
+  background: url(res/img/banner3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.banner>div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 100%;
+  z-index: -100;
+}
+
+.slogan {
+  position: absolute;
+  font-size: 2rem;
+  font-family: 'ThuPhap';
+  top: 50%;
+  left: 50%;
+  width: 7.5rem;
+  padding: 1rem;
+  word-wrap: break-word;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  color: antiquewhite;
+  background-color: #141414b7;
+  border-radius: 5px;
+}
+
+#collaspe-btn {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
   display: none;
+  color: antiquewhite;
+}
+
+#collaspe-btn:hover {
+  color: var(--second-color);
 }
 
 
 /*------------------------
 MAIN
 --------------------------*/
+
 #main {
-  margin: 0 auto;
+  margin: auto;
   height: 100%;
   max-width: 1200px;
+}
+
+.main-title {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.main-title::before,
+.main-title::after {
+  display: inline-block;
+  content: "";
+  width: 10%;
+  height: 2px;
+  margin: 0 1rem;
+  vertical-align: middle;
+  background-color: var(--main-color);
+}
+
+.main-title:hover.main-title::before,
+.main-title:hover.main-title::after {
+  width: 20%;
+  transition: all .5s ease-in-out;
+}
+
+.intro {
+  background: url(res/img/trongdong.png) center no-repeat fixed;
+  background-size: cover;
+  padding: 15px;
+  color: var(--main-color);
+  text-align: justify;
+  border-radius: 5px;
+  box-shadow: 0 0 1px 0 var(--main-color-blur);
+}
+
+.intro p:not(:first-child) {
+  text-align: right;
+}
+
+#quote {
+  font-style: italic;
+}
+
+.main-content {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "side mainCT";
+}
+
+.thoiky-title {
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.sidebar {
+  grid-area: side;
+}
+
+.sidebar ol>li>a {
+  color: var(--main-color);
+}
+
+.main-container {
+  grid-template: mainCT;
+  text-align: justify;
+}
+
+.sukien,
+.sukien article {
+  margin: 1rem 0;
+}
+
+.sukien p {
+  padding-left: 1rem;
+}
+
+.sukien ul>li {
+  list-style: disc;
+}
+
+.minhhoa {
+  width: 70%;
+  word-wrap: break-word;
+  padding: 1px;
+  margin: 1rem auto;
+  box-shadow: 0 0 4px 0 #1414145e;
+}
+
+.minhhoa.small {
+  width: 40%;
+}
+
+.minhhoa.large {
+  width: 100%;
+}
+
+.minhhoa>div,
+.minhhoa>div>div {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+
+}
+
+.minhhoa>div>div {
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.minhhoa img {
+  margin: 2px;
+  width: 100%;
+  object-fit: cover !important;
+}
+
+figcaption {
+  margin-top: 5px;
+  text-align: center;
 }
 
 /*------------------------
@@ -111,8 +312,135 @@ FOOTER
 /*------------------------
 RESPONSIVE
 --------------------------*/
-@media (max-width: 1000px) {
-  #header {
-    padding: 0 1rem;
+@media (min-width: 2300px) {
+  .slogan {
+    top: 16%;
+    left: 50%;
+    transition: all .5s;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 2299px) {
+  .slogan {
+    top: 30%;
+    left: 50%;
+    transition: all .5s;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .giaidoan {
+    grid-template-columns: 1fr;
+    grid-template-areas: "suKien" "minhHoa";
+  }
+
+  .logo {
+    width: 100%;
+    margin-left: initial;
+    justify-content: space-between;
+  }
+
+  #collaspe-btn {
+    display: block;
+    margin: auto 10px;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-form {
+    margin: 15px auto;
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .header-nav-list li {
+    width: 100%;
+  }
+
+  .header-nav-list a {
+    display: block;
+    text-align: center;
+  }
+
+  .header-nav.hide {
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+  }
+
+  .header-nav.show {
+    height: 250px;
+    transition: .5s ease-in-out;
+  }
+
+  .parent {
+    grid-template-rows: 250px 250px;
+  }
+
+  .slogan {
+    transform: scale(.7);
+    top: 10%;
+    left: 10%;
+    transition: all .5s;
+  }
+  
+
+  /* main================ */
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .main-title::before,
+  .main-title::after {
+    display: block;
+    content: "";
+    width: 50%;
+    margin: 10px auto;
+    background-color: var(--main-color);
+  }
+  
+  .main-title:hover.main-title::before,
+  .main-title:hover.main-title::after {
+  width: 70%;
+  transition: all .5s ease-in-out;
+}
+
+}
+
+@media (max-width: 500px) {
+  .logo a {
+    font-size: 20px;
+  }
+  
+  .logo img {
+    width: 20px;
+    height: 25px;
+  }
+
+  #collaspe-btn {
+    font-size: 20px;
+  }
+  .parent {
+    grid-template-rows: 200px 200px;
+  }
+
+  .slogan {
+    transform: scale(.5);
+    top: 0;
+    transition: all .5s;
+  }
+
+  /* main ================== */
+  .main-title {
+    font-size: 1.5rem;
   }
 }
