@@ -9,15 +9,16 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
   <header id="header">
+    <!-- nav bar -->
     <div class="nav">
       <div class="logo">
         <a href="index.html"><img data-src="res/img/logo.png" alt="logo">
@@ -30,15 +31,16 @@
           <input type="text" name="search" id="search-txt" placeholder="Tìm Kiếm" size="20">
         </form>
         <ul class="header-nav-list">
-          <li><a href="">Các Thời Kỳ</a></li>
+          <li><a href="DongLichSu.html">Các Thời Kỳ</a></li>
           <li><a href="">Sự Kiện Nổi Bật</a></li>
+          <li><a href="">Thư Viện</a></li>
           <li><a href="">Điều Thú Vị</a></li>
         </ul>
       </nav>
     </div>
     <div class="banner parent">
       <div class="div1">
-        <p class="slogan" id="slogan">SỬ VIỆT OAI HÙNG<img data-src="res/img/andau.jpg" alt=""></p>
+        <p class="slogan" id="slogan">SỬ VIỆT OAI HÙNG<img data-src="res/img/andau.jpg" src="res/img/cloud.png" alt=""></p>
       </div>
       <div class="div2"></div>
       <div class="div3"></div>
@@ -48,336 +50,52 @@
 
   <main id="main">
 
-    <!-- Mở đầu -->
-    <h1 class="main-title">Khái Quát Lịch Sử Việt Nam</h1>
-    <div class="intro">
-      <p id="quote"></p>
-      <p>Con Đường Việt Nam - Nguyễn Sĩ Bình</p>
-    </div>
-    <section class="main-content">
-      <div class="main-container">
-
-        <!-- các thời kỳ -->
-        <div class="thoiky" id="tk-tiensu">
-          <h2 class="thoiky-title">Thời Tiền Sử</h2>
-          <div class="giaidoan">
-            <div class="sukien">
-
-              <article>
-                <h3>1. Thời đồ đá cũ</h3>
-                <p>Con người đã xuất hiện khá sớm trên đất Việt Nam. Cho đến nay, các nhà khảo cổ học đã tìm thấy dấu
-                  vết của người vượn Homo erectus trong một số hang động ở Lạng Sơn, Nghệ An, Yên Bái; các dấu tích của
-                  nền văn hóa Núi Đọ (Thanh Hoá), Thần Sa (Thái Nguyên), Sơn Vi (Phú Thọ), cách ngày nay khoảng 10.000 -
-                  30.000 năm trước. Khi đó con người đã biết sử dụng công cụ thô sơ bằng đá cuội, sống phân bố khá rộng,
-                  khá đông trên đất Việt Nam.</p>
-                <figure class="minhhoa">
-                  <img alt="co vat bang da" data-src="res/img/covatyenthe.jpg">
-                  <figcaption>Cổ vật bằng đá tại Yên Thế.</figcaption>
-                </figure>
-              </article>
-
-              <article>
-                <h3>2. Thời đồ đá mới</h3>
-                <p>Tiêu biểu với nền văn hóa Hòa Bình, Bắc Sơn (khoảng 6.000 - trên 10.000 năm trước). Con người đã sử
-                  dụng nhiều loại công cụ bằng đá có chức năng riêng; biết làm đồ gốm, trồng trọt sơ khai, từ giã hái
-                  lượm để sản xuất.</p>
-                <figure class="minhhoa">
-                  <img alt="" data-src="res/img/thoitiensu.jpeg">
-                  <figcaption>Bức tranh mô phỏng cuộc sống người tiền sử ở Nam Tây Nguyên tại Bảo tàng Lâm Đồng.</figcaption>
-                </figure>
-              </article>
-
-              <article>
-                <h3>3. Thời đại kim khí</h3>
-                <p>Cách đây khoảng 4.000 năm: từ thời đại đồ đồng tới sơ kỳ đồ sắt, trên đất nước Việt Nam đã hình thành
-                  ba trung tâm văn hóa lớn đồng đại: Phùng Nguyên - Đông Sơn (Bắc bộ), Long Thạnh - Sa Huỳnh (Trung bộ)
-                  và Cầu Sắt, Dốc Chùa - Đồng Nai (Nam bộ). Ba trung tâm văn hóa này có mối quan hệ qua lại mật thiết,
-                  lâu dài và góp phần tạo nên đặc trưng truyền thống văn hóa Việt Nam: thống nhất trong đa dạng.</p>
-                <figure class="minhhoa">
-                  <img alt="co vat bang da" data-src="res/img/dao.jpeg">
-                  <figcaption>Cổ vật bằng đá tại Yên Thế.</figcaption>
-                </figure>
-              </article>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="thoiky" id="tk-codai">
-          <h2 class="thoiky-title">Thời kỳ cổ đại (2879–111 TCN)</h2>
-          <div class="giaidoan">
-            <div class="sukien">
-
-              <article>
-                <h3>4. Kỷ Hồng Bàng (2879–258 TCN)</h3>
-                <p>Việt Nam chưa có chính sử, lúc này truyền thuyết và lịch sử còn hòa quyện vào nhau. Người ta thường
-                  hay nhắc tới các truyền thuyết về Kinh Dương Vương, Lạc Long Quân, Phù Đổng Thiên Vương, Sơn Tinh –
-                  Thủy Tinh nhằm giải thích nguồn gốc và sự đấu tranh để tồn tại của dân tộc. Nước Xích Quỷ và nước Văn
-                  Lang đã được thành lập trong giai đoạn này.</p>
-                <figure class="minhhoa">
-                  <img alt="ky hong bang" data-src="res/img/hong-bang-thi.jpg">
-                  <figcaption>Tiết Liêu (Lang Liêu) dâng bánh chưng bánh giày cho vua Hùng.</figcaption>
-                </figure>
-              </article>
-
-              <article>
-                <h3>5. Nước Âu Lạc (257–208 hoặc 179 TCN)</h3>
-                <p>Đến thế kỷ III TCN, Thục Phán, thủ lĩnh của bộ tộc Âu Việt – một trong những bộ tộc của Bách Việt ở
-                  phía Bắc Văn Lang, đã đánh bại Hùng Vương thứ 18 lập nên nhà nước Âu Lạc. Nhà nước liên minh Âu Việt –
-                  Lạc Việt đã đánh bại cuộc xâm lược của nhà Tần. Nhà nước định đô tại Cổ Loa, thuộc huyện Đông Anh, Hà
-                  Nội ngày nay. Ông tự xưng là An Dương Vương. Nước Âu Lạc của An Dương Vương bị Triệu Đà (một viên
-                  tướng cũ của nhà Tần) thôn tính năm 208 TCN (hoặc 179 TCN).</p>
-                <figure class="minhhoa">
-                  <img alt="au lac" data-src="res/img/nuocaulac.jpg">
-                  <figcaption>Nước Âu Lạc.</figcaption>
-                </figure>
-              </article>
-
-              <article>
-                <h3>6. Nước Nam Việt (204–111 TCN)</h3>
-                <p>Triệu Đà, gốc người Hán, thôn tính Âu Lạc. Sự kiện này cũng được thể hiện qua truyền thuyết về mối
-                  tình Trọng Thủy, Mỵ Châu. Sau khi chiếm được Âu Lạc, Triệu Đà lập nước Nam Việt. Nhà Triệu kéo dài 97
-                  năm với năm đời vua: Triệu Đà, Triệu Hồ, Triệu An Tề, Triệu Hưng, Triệu Kiến Đức</p>
-                <figure class="minhhoa">
-                  <img alt="an duong vuong" data-src="res/img/thuc-phan-an-duong-vuong.jpg">
-                  <figcaption>An Dương Vương và Mị Châu.</figcaption>
-                </figure>
-              </article>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="thoiky" id="tk-bacthuoc">
-          <h2 class="thoiky-title">Thời Kỳ Bắc Thuộc (111 TCN–938 SCN)</h2>
-          <div class="giaidoan">
-            <div class="sukien">
-              <article>
-                <h3>7. Bắc Thuộc Lần 1 (111 TCN–40 SCN)</h3>
-                <ul>
-                  <li>
-                    <p>Năm 111 TCN, đội quân của nhà Hán (Hán Vũ Đế) xâm chiếm nước Nam Việt và sáp nhập Nam Việt vào đế
-                      chế Hán. Người Trung Quốc muốn cai quản miền châu thổ sông Hồng để có điểm dừng cho tàu bè đang
-                      buôn bán với Đông Nam Á.</p>
-                  </li>
-                  <li>
-                    <p>Từ 40, khởi nghĩa Hai Bà Trưng. Sau thắng lợi, Trưng Trắc lên ngôi vua, đóng đô ở Mê Linh. Năm
-                      41, Mã Viện mang 20 vạn quân sang xâm lược nước ta. Năm 43, Hai Bà Trưng thất bại, phải nhảy xuống
-                      sông Hát Giang tuẫn tiết.</p>
-                  </li>
-                </ul>
-                <figure class="minhhoa">
-                  <img alt="hai ba trung" data-src="res/img/2batrung.jpg">
-                  <figcaption>Nước Âu Lạc.</figcaption>
-                </figure>
-              </article>
-
-              <article>
-                <h3>8. Bắc Thuộc Lần 2 (43–544)</h3>
-                <p>Việt Nam sống dưới ách đô hộ của phong kiến phương Bắc. Thời gian này có cuộc khởi nghĩa của Bà Triệu
-                  chống quân Đông Ngô. Bà Triệu tự xưng là Đại Hải Bà Vương, đánh nhau với tướng Đông Ngô là Lục Dân
-                  nhưng thất bại.</p>
-                <figure class="minhhoa">
-                  <img alt="ba Trieu cuoi voi" data-src="res/img/batrieu.png">
-                  <figcaption>Bà Triệu cưỡi voi.</figcaption>
-                </figure>
-              </article>
-
-              <article>
-                <h3>9. Nhà Tiền Lý (544–602)</h3>
-                <p>Từ 571 – 602, Lý Phật Tử, họ hàng với Lý Nam Đế tiêu diệt Triệu Việt Vương và lên ngôi. Thời kỳ này
-                  phong kiến phương Bắc là nhà Tùy sang xâm lược. Lý Phật Tử đầu hàng, Việt Nam bị nhà Tùy đô hộ.</p>
-                <figure class="minhhoa small">
-                  <img alt="nuoc Van Xuan" data-src="res/img/nuocvanxuan.jpg">
-                  <figcaption>Bản đồ nước Vạn Xuân.</figcaption>
-                </figure>
-              </article>
-
-              <article>
-                <h3>10. Bắc Thuộc Lần 3 (602–923 hoặc 930)</h3>
-                <p>Kế tiếp nhà Tùy, nhà Đường đô hộ Việt Nam gần 300 năm. Với lần lượt các cuộc khởi nghĩa Mai Thúc
-                  Loan(722), Phùng Hưng(791-802), Khúc Thừa Dụ, Khúc Thừa Hạo, Khúc Thừa Mỹ và Dương Đình Nghệ (905 –
-                  938) đã xây nền thời kỳ tự chủ.</p>
-                <figure class="minhhoa small">
-                  <img alt="Mai Hac De" data-src="res/img/maithucloan.jpg">
-                  <figcaption>Khởi Nghĩa Mai Thúc Loan.</figcaption>
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="thoiky" id="tk-quanchu">
-          <h2 class="thoiky-title">Thời Kỳ Quân Chủ (939–1945)</h2>
-          <div class="giaidoan">
-            <div class="sukien">
-              <article>
-                <h3>11. Thời kỳ độc lập (939–1407)</h3>
-                <ul>
-                  <li>
-                    <p>Năm 939, Ngô Quyền xưng vương sau trận chiến lịch sử trên sông Bạch Đằng trước quân Nam Hán.</p>
-                  </li>
-                  <li>
-                    <p>Năm 968, Đinh Bộ Lĩnh xưng đế, lập nên nhà Đinh (968–980) và đặt tên nước là Đại Cồ Việt.</p>
-                  </li>
-                  <li>
-                    <p>Năm 980, Lê Hoàn lên ngôi vua, lập nên nhà Tiền Lê (980–1009)</p>
-                  </li>
-                  <li>
-                    <p>Năm 1009, Lý Công Uẩn lên ngôi vua, lập nên nhà Lý (1009–1225). Năm 1054, vua Lý Thánh Tông đổi
-                      tên thành Đại Việt.</p>
-                  </li>
-                </ul>
-                <figure class="minhhoa large">
-                  <div>
-                    <div>
-                      <img alt="anh" data-src="res/img/bachdang.jpg">
-                      <img alt="Le Dai Hanh" data-src="res/img/ledaihanh.jpg">
-                    </div>
-                    <div>
-                      <img alt="Dinh Tien Hoang" data-src="res/img/dinh-bo-linh.jpg">
-                      <img alt="Ly Cong Uan" data-src="res/img/lythaito.jpeg">
-
-                    </div>
-                  </div>
-                  <figcaption>Một vài hình ảnh minh hoạ.</figcaption>
-                </figure>
-              </article>
-
-              <article>
-                <h3>12. Bắc thuộc lần 4 (1407–1427)</h3>
-                <p>Năm 1407, quân Minh sang xâm lược Đại Ngu với cớ đánh đuổi nhà Hồ khôi phục nhà Trần (Phù Trần diệt
-                  Hồ). Quân Minh nhanh chóng đánh bại quân Đại Ngu, giai đoạn này gọi là Bắc thuộc lần 4. Các lực lượng
-                  của Nhà Hậu Trần đã nổi dậy từ 1407–1413 để chống lại quân Minh nhưng cũng bị đánh dẹp.</p>
-              </article>
-
-              <article>
-                <h3>13. Thời kỳ trung hưng (1428–1527)</h3>
-                <p>Năm 1427, Lê Lợi sau khi đánh bại quân Minh lập ra Nhà Hậu Lê, giai đoạn này còn được gọi là Nhà Lê
-                  sơ.</p>
-              </article>
-
-              <article>
-                <h3>14. Thời kỳ chia cắt (1527–1787)</h3>
-                <p>Bắt nguồn từ thời kỳ Nam – Bắc triều, năm 1527, sau khi giành ngôi từ nhà Hậu Lê, Mạc Đăng Dung đã
-                  lập nên nhà Mạc. Nhà Hậu Lê (sử gọi là nhà Lê trung hưng) được tái lập vài năm sau đó với sự giúp đỡ
-                  của Nguyễn Kim, một tướng cũ và giành được sự kiểm soát khu vực từ Thanh Hóa vào Bình Định. Sau khi
-                  Nguyễn Kim chết, người con rể là Trịnh Kiểm đã giành quyền bính, 60 năm kế tiếp, Trịnh Kiểm và các con
-                  cháu của ông đã giành được chiến thắng trước nhà Mạc vào năm 1592 và mở đầu cho thời kỳ đặc biệt trong
-                  lịch sử phong kiến Việt Nam, thời kỳ vua Lê chúa Trịnh</p>
-                <p>Việt Nam giai đoạn này trải qua nhiều chế độ phong kiến: Nhà Mạc (1527–1592), nhà Lê trung hưng
-                  (1533–1789), chúa Trịnh (1545–1787), chúa Nguyễn (1558–1777).</p>
-                <p>Sự mâu thuẫn giữa hai người cận thần của nhà Lê trung hưng là Trịnh Kiểm và Nguyễn Hoàng (trấn thủ xứ
-                  Thuận Hóa và Quảng Nam) đã bắt đầu cho sự phân chia đất nước ra thành hai lãnh thổ. Trong khi Trịnh
-                  Kiểm tìm cớ giết Nguyễn Uông (con cả của Nguyễn Kim) thì Nguyễn Hoàng chạy vào Thuận Hóa lập cát cứ,
-                  hai chính quyền riêng biệt là Đàng Ngoài và Đàng Trong với sông Gianh (Quảng Bình) làm biên giới. Các
-                  con cháu của Trịnh Kiểm lần lượt kế tiếp nhau nắm quyền ở Đàng Ngoài được gọi là các chúa Trịnh, các
-                  con cháu của Nguyễn Hoàng kế tiếp nhau cầm quyền ở Đàng Trong được gọi là các chúa Nguyễn, các vua Lê
-                  chỉ có danh vị hoàng đế của Đại Việt trên danh nghĩa.</p>
-                <p>Trong giai đoạn này, nước Đại Việt đã có những cuộc Nam Tiến nhằm mở rộng lãnh thổ, năm 1698 đến năm
-                  1757, chính quyền Đàng Trong đã giành được hoàn toàn Nam Bộ ngày nay vào sự kiểm soát của mình.</p>
-              </article>
-
-              <article>
-                <h3>15. Chiến tranh Tây Sơn-Chúa Nguyễn thống nhất đất nước (1787–1858)</h3>
-                <p>Nhà Tây Sơn (1778 - 1802), được thành lập trong bối cảnh tranh chấp quyền lực cuối thời Lê Trung
-                  Hưng.</p>
-                <p>Theo cách gọi của phần lớn sử gia thì "nhà Tây Sơn" được dùng để gọi triều đại của anh em Nguyễn
-                  Nhạc, Nguyễn Lữ và Nguyễn Huệ để phân biệt với nhà Nguyễn của Nguyễn Ánh (vì cùng họ Nguyễn).</p>
-                <p>Một trong những công tích lớn nhất của nhà Tây Sơn trong lịch sử dân tộc là đã tiến đến rất gần công
-                  cuộc thống nhất và đồng thời mở rộng lãnh thổ đất nước sau hàng trăm năm Việt Nam bị chia cắt bởi các
-                  cuộc tranh giành quyền lực giữa các thế lực lớn Mạc-Trịnh-Nguyễn kể từ khi nhà Lê sơ bị sụp đổ. Tuy
-                  nhiên việc vua Quang Trung (Nguyễn Huệ) đột ngột qua đời khi còn khá trẻ đã khiến ưu thế của Tây Sơn
-                  chuyển vào tay Nguyễn Ánh, một hậu duệ của Chúa Nguyễn cũng sinh trưởng trên đất Đàng Trong trong thế
-                  kỷ 18 với nhiều biến động lớn của lịch sử. Triều đại Tây Sơn tồn tại khoảng 24 năm thì sụp đổ sau khi
-                  chúa Nguyễn Ánh tiến hành một cuộc chiến tranh toàn diện để tiêu diệt nhà Tây Sơn và thành lập nhà
-                  Nguyễn.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="thoiky" id="tk-hiendai">
-          <h2 class="thoiky-title">Thời Kỳ Hiện Đại (1858–nay)</h2>
-          <div class="giaidoan">
-            <div class="sukien">
-              <article>
-                <h3>16. Thời kỳ Pháp thuộc (1858–1945)</h3>
-                <p>Ngày 31 tháng 8 năm 1858, Hải quân Pháp đổ bộ tấn công vào cảng Đà Nẵng và sau đó rút vào xâm chiếm
-                  Sài Gòn. Tháng 6 năm 1862, Vua Tự Đức ký hiệp ước nhượng ba tỉnh miền Đông cho Pháp. Đến năm 1886,
-                  Pháp chiếm được hoàn toàn lãnh thổ.</p>
-              </article>
-
-              <article>
-                <h3>17. Thời kỳ Nhật thuộc (1940–1945)</h3>
-                <p>Chính quyền thực dân Pháp chỉ tồn tại đến tháng 3 năm 1945 khi Nhật tấn công toàn bộ Đông Dương. Nhật
-                  đã thiết lập chính quyền với vua Bảo Đại và thủ tướng Trần Trọng Kim, đặt quốc hiệu mới đế quốc Việt
-                  Nam và quốc kỳ là cờ quẻ ly.</p>
-              </article>
-
-              <article>
-                <h3>18. Thời kỳ cộng hòa (1945–nay)</h3>
-                <ul>
-                  <li>
-                    <p>Lực lượng Việt Minh do Hồ Chí Minh lãnh đạo đã liên tục chống phát xít Nhật và thực dân Pháp từ
-                      thập niên 1930</p>
-                  </li>
-                  <li>
-                    <p>Tới tháng 8 năm 1945, lực lượng Việt Minh lãnh đạo đã tổ chức thành công cuộc Cách mạng tháng Tám
-                    </p>
-                  </li>
-                  <li>
-                    <p>Ngày 2 tháng 9 năm 1945 tại Hà Nội, Hồ Chí Minh tuyên bố thành lập nước Việt Nam Dân chủ Cộng hòa
-                      độc lập và thống nhất từ miền Bắc tới miền Nam</p>
-                  </li>
-                  <li>
-                    <p>Tháng 12 năm 1946, Chiến tranh giữa Việt Minh và thực dân Pháp bùng nổ. Pháp thất bại ở trận Điện
-                      Biên Phủ vào tháng 5 năm 1954 đã kết thúc hoàn toàn nỗ lực của Pháp và Mỹ. Hiệp định Genève được
-                      ký, chia Việt Nam ra 2 phần theo vĩ tuyến 17.</p>
-                  </li>
-                  <li>
-                    <p>Năm 1960 Đồng Khởi. Mặt trận dân tộc giải phóng miền Nam ra đời.</p>
-                  </li>
-                  <li>
-                    <p>1968, tổng tiến công tết Mậu Thân. Mỹ tăng cường chiến tranh phá hoại miền Bắc.</p>
-                  </li>
-                  <li>
-                    <p>1972 chiến thắng B52, Mỹ phải họp hội nghị ở Paris. Năm 1973, hiệp định Hòa bình ký và chấm dứt
-                      chiến tranh ở Việt Nam. Mỹ rút quân.</p>
-                  </li>
-                  <li>
-                    <p>30/4/1975, chiến dịch Hồ Chí Minh toàn thắng, miền Nam hoàn toàn được giải phóng. Ngày 2/7/1976,
-                      Quốc hội khóa VI, kỳ họp thứ nhất đổi tên nước ta thành Cộng hòa Xã hội Chủ nghĩa Việt Nam.</p>
-                  </li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <aside class="sidebar">
-        <ol>
-          <li>
-            <a href="#tk-tiensu">Thời Tiền Sử</a>
-          </li>
-          <li>
-            <a href="#tk-codai">Thời Kỳ Cổ Đại</a>
-          </li>
-          <li>
-            <a href="#tk-bacthuoc">Thời Kỳ Bắc Thuộc</a>
-          </li>
-          <li>
-            <a href="#tk-quanchu">Thời Kỳ Quân Chủ</a>
-          </li>
-          <li>
-            <a href="#tk-hiendai">Thời Kỳ Hiện Đại</a>
-          </li>
-        </ol>
-      </aside>
-    </section>
   </main>
 
-  <footer id="footer">footer</footer>
+  <!-- footer -->
+  <footer id="footer">
+    <p class="info"><i class="fas fa-home"></i> Trang Thông Tin Lịch Sử Việt Nam</p>
+    <div class="contact">
+      <button type="button" data-toggle="modal" data-target="#contact-modal">Liên Hệ</button>
+      <p id="company"><i class="fas fa-building"></i> CÔNG TY TNHH PHÁT TRIỂN GIÁO DỤC VÀ CÔNG NGHỆ I&E VIỆT</p>
+      <p id="adress"><i class="fas fa-map-marker"></i> Địa chỉ: Số 9 Ngách 40, ngõ 91 Nguyễn Chí Thanh, Phường Láng Hạ,
+        Quận Đống Đa, Thành phố Hà Nội</p>
+    </div>
+    <p id="copyright">© 2020 Copyright</p>
+  </footer>
+
+  <div id="social">
+    <a href="#header"><img class="sticky-btn up" data-src="res/img/up.png" alt="Header"></a>
+    <a href="#"><img class="sticky-btn facebook" data-src="res/img/facebook.png" alt="facebook"></a>
+    <a href="#"><img class="sticky-btn youtube" data-src="res/img/youtube.png" alt="youtube"></a>
+    <a href="#copyright"><img class="sticky-btn down" data-src="res/img/down.png" alt="Footer"></a>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Liên Hệ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="name" id="modal-name" placeholder="Tên">
+
+          <input type="tel" name="phone" id="modal-phone" placeholder="Điện thoại">
+
+          <input type="email" name="email" id="modal-email" placeholder="Email" required>
+
+          <textarea name="content" id="modal-content" rows="2" placeholder="Nội dung" required></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -391,9 +109,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
-    integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
-    crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -45,6 +45,7 @@ const lazy = target => {
         const img = entry.target;
         const src = img.getAttribute('data-src');
 
+        img.removeAttribute('src');
         img.setAttribute('src', src);
         observer.disconnect();
       }
